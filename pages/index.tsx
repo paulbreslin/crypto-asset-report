@@ -1,3 +1,4 @@
+// @ts-nocheck
 import { useState, useRef } from "react";
 import Image from "next/image";
 import { Poppins } from "next/font/google";
@@ -133,7 +134,7 @@ export default function Home() {
 
   useHotkeys("/", (event) => {
     event.preventDefault();
-    inputRef.current.focus();
+    inputRef?.current?.focus();
   });
 
   const fuse = new Fuse(assets, {

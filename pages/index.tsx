@@ -13,7 +13,7 @@ import {
   Legend,
 } from "recharts";
 
-import { assets } from "./data";
+import { assets } from "../data";
 
 const poppinsLight = Poppins({ subsets: ["latin"], weight: ["300"] });
 const poppinsMedium = Poppins({ subsets: ["latin"], weight: ["500"] });
